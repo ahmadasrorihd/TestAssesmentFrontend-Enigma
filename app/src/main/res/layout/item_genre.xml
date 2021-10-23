@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="item"
+            type="com.ahmadasrori.testassesmentfrontend_enigma.model.genre.Genre" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardItem"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="16dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="8dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{item.name}"
+                tools:text="nama"
+                android:id="@+id/tvName"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>
